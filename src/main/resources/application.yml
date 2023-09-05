@@ -1,0 +1,24 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 508960532181-g7l3gge28hi30jufum6709hb5d56ktce.apps.googleusercontent.com
+            clientSecret: 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
+  datasource:
+    url: jdbc:postgresql://localhost:5432/codemylove
+    username: postgres
+    password: 1
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
